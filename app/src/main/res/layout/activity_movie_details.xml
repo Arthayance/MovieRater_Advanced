@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".MainActivity">
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content"
+               android:src="@drawable/img1" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title: \n" />
+    <TextView
+            android:id="@+id/movie_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text="Venom"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overview: \n"/>
+    <TextView
+            android:id="@+id/movie_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text="When Eddie Brock acquires the powers of a symbiote, he will have to release his alter-ego to save his life"
+            android:inputType="textMultiLine"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reviews \n" />
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:id="@+id/movie_reviews"
+            android:text="No reviews yet \nLong press here to add your review \n" />
+    <RatingBar
+            android:id="@+id/ratingDisplay"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyle"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:isIndicator="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review"
+            android:textSize="19dp"
+            android:visibility="gone"
+            android:id="@+id/reviewTextView" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Language:" />
+    <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/language"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text="English" />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Release date: \n" />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r_date"
+            android:textSize="19dp"
+            android:text="03-10-2018" />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suitable for children below 13: \n" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/audienceDisplay"
+            android:textSize="19dp"
+            android:text="Yes" />
+
+
+</LinearLayout>
